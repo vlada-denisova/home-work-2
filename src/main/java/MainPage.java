@@ -4,6 +4,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class MainPage {
+
     private WebDriver driver;
     protected  String baseUrl = "https://accstorefront.ced73xzk9p-directtra1-s1-public.model-t.cc.commerce.ondemand.com/";//url сайта
 
