@@ -43,14 +43,13 @@ public class MainPage {
 
     public void scrollDown() {
         JavascriptExecutor javascriptExecutor = (JavascriptExecutor)driver;
-//        javascriptExecutor.executeScript("window.scroll(0,1000)");
+        javascriptExecutor.executeScript("window.scroll(0,1000)");
         javascriptExecutor.executeScript("window.scrollBy(0,document.body.scrollHeight)");
     }
 
     public void moveToElement() {
-//        Actions actions = new Actions(driver);
-//        actions.moveToElement(userIcon).build().perform();
-        userIcon.click();
+        Actions actions = new Actions(driver);
+        actions.moveToElement(userIcon).build().perform();
     }
 
 }
